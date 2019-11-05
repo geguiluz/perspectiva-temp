@@ -41,13 +41,12 @@
 
   .about-info {
     grid-template-areas:
-      'bioimage'
-      'bio'
-      'job1'
-      'job2'
+      'bioimage bioimage'
+      'bio bio'
+      'job1 job2'
       'job3';
 
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -60,5 +59,26 @@
     &.lg-heading {
       font-size: 15vw;
     }
+  }
+
+  // .about-info {
+  //   grid-template-areas:
+  //     'bioimage'
+  //     'bio'
+  //     'job1'
+  //     'job2'
+  //     'job3';
+
+  //   grid-template-columns: 1fr;
+  // }
+
+  .about-info {
+    grid-template-areas:
+      'bioimage bioimage'
+      'bio bio'
+      'job1 job2'
+      'job3';
+
+    grid-template-columns: 1fr 1fr;
   }
 }

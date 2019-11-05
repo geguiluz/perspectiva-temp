@@ -74,6 +74,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
+  column-gap: 1px;
   grid-template-areas:
     'bioimage bio bio'
     'job1 job2 job3';
@@ -95,14 +96,23 @@ main {
 
   .job-1 {
     grid-area: job1;
+    width: 250px;
+    height: 250px;
+    background-image: url('/img/about-1.png');
   }
 
   .job-2 {
     grid-area: job2;
+    width: 250px;
+    height: 250px;
+    background-image: url('/img/about-2.png');
   }
 
   .job-3 {
     grid-area: job3;
+    width: 250px;
+    height: 250px;
+    background-image: url('/img/about-3.png');
   }
 
   .job {
