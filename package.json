@@ -6,7 +6,8 @@
   "homepage": "https://geguiluz.github.io/perspectiva-temp",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run gh-pages",
+    "gh-pages": "gh-pages -d dist -b gh-pages"
   },
   "author": "Memo Eguiluz",
   "license": "ISC",
