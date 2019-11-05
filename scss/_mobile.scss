@@ -3,6 +3,10 @@
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .title-box {
+    margin-bottom: 1rem;
+  }
 }
 
 // Desktops and Laptops
@@ -24,14 +28,14 @@
       }
 
       &.sm-heading {
-        font-size: 2vw;
+        font-size: 1.5vw;
       }
     }
   }
 
   .title-box {
     margin: 0 6vw 0 6vw;
-    max-width: 25vw;
+    max-width: 30vw;
   }
 }
 

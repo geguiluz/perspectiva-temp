@@ -31,6 +31,7 @@ h3 {
 
   &.sm-heading {
     display: flex;
+    font-size: 1rem;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
@@ -81,7 +82,7 @@ main {
       display: inline-flex;
       flex-wrap: wrap;
       line-height: 0.9;
-      max-width: 50vw;
+      max-width: 25rem;
       padding: 0 0.5rem 0 0.5rem;
       justify-content: center;
       border-left: #fff 3px solid;
