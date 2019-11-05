@@ -2,7 +2,7 @@
   "name": "temporary-site",
   "version": "1.0.0",
   "description": "Perspectiva Studio Website",
-  "main": "index.js",
+  "main": "dist/index.js",
   "homepage": "https://geguiluz.github.io/perspectiva-temp",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
