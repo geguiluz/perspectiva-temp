@@ -76,26 +76,33 @@ $background-opacity: 0.55;
 @keyframes banner {
   0% {
     background-image: $home-image1;
+    background-size: cover;
   }
   25% {
     background-image: $home-image1;
   }
   26% {
     background-image: $home-image2;
+    background-size: cover;
   }
   50% {
     background-image: $home-image2;
+    background-size: cover;
   }
   51% {
     background-image: $home-image3;
+    background-size: cover;
   }
   75% {
     background-image: $home-image3;
+    background-size: cover;
   }
   76% {
     background-image: $home-image4;
+    background-size: cover;
   }
   100% {
     background-image: $home-image4;
+    background-size: cover;
   }
 }
