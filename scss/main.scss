@@ -145,16 +145,17 @@ main {
     font-size: 2vw;
     border: 3px #fff solid;
     padding: 0.5rem 1.5rem;
+    background: rgba(lighten($primary-color, 2), 0.5);
     // margin-bottom: 3rem;
     @include easeOut;
 
     &:hover {
-      // padding: 1.5rem 2.5rem;
-      // background: $secondary-color;
-      color: set-text-color($secondary-color);
-      span {
-        color: set-text-color($secondary-color);
-      }
+      // margin-top: -0.1rem;
+      // margin-right: 0.2rem;
+      padding: 1rem 2rem;
+      background: rgba(lighten($primary-color, 2), 0);
+      // color: $secondary-color;
+      border: 3px $secondary-color solid;
     }
   }
 }
