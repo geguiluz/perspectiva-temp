@@ -92,6 +92,8 @@ main {
 }
 
 .mob-social-icons {
+  display: flex;
+  justify-content: center;
   visibility: hidden;
 }
 
