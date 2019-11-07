@@ -196,6 +196,8 @@ main {
       border-right: #fbf0fa 3px solid; }
 
 .mob-social-icons {
+  display: flex;
+  justify-content: center;
   visibility: hidden; }
 
 .about-info {
