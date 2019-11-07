@@ -125,6 +125,10 @@
     max-width: 30vw;
   }
 
+  .mob-social-icons {
+    visibility: visible;
+  }
+
   .boxes {
     div {
       min-width: 50vw;
@@ -134,10 +138,17 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  #main-footer {
+    visibility: hidden;
+  }
 }
 
 // Smartphones
 @include mediaSm {
+  body {
+    background-position: center;
+  }
   main {
     padding: 4vw;
 
@@ -175,5 +186,9 @@
 
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  #main-footer {
+    visibility: hidden;
   }
 }
