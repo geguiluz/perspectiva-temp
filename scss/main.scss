@@ -112,11 +112,13 @@ main {
   .page-title {
     display: inline-flex;
     flex-wrap: wrap;
-    margin: 0;
+    margin-top: 2vh;
     max-width: 800px;
     line-height: 0.9;
-    padding: 0 0.5rem 0 0.5rem;
     justify-content: center;
+    h2 {
+      line-height: 1.2;
+    }
   }
   .title-box {
     display: inline-flex;
@@ -132,13 +134,10 @@ main {
   &#home {
     overflow: hidden;
   }
-  &#projects {
-    overflow-x: hidden;
-  }
+
   &#contact {
     display: block;
     align-items: flex-start;
-    text-align: center;
   }
 }
 
@@ -291,6 +290,7 @@ main {
 
 .contact-box {
   margin-top: 10vh;
+  text-align: center;
 }
 
 @import 'mobile';
