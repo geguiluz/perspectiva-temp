@@ -108,3 +108,11 @@ $background-opacity: 0.7;
     background-size: cover;
   }
 }
+
+@mixin hover-supported {
+  @media not all and (pointer: coarse) {
+    &:hover {
+      @content;
+    }
+  }
+}
