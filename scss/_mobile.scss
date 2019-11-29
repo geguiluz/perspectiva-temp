@@ -19,7 +19,7 @@
   }
 
   .projects {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .title-box {
@@ -75,6 +75,10 @@
 
 // Tablets and small Laptops
 @include mediaMd {
+  .main-grid {
+    grid-template-rows: auto 1fr 0px;
+  }
+
   main {
     // align-items: center;
     // text-align: center;
@@ -88,11 +92,11 @@
     h2,
     h3 {
       &.lg-heading {
-        font-size: 12vw;
+        font-size: 8vw;
       }
 
       &.md-heading {
-        font-size: 8vw;
+        font-size: 7vw;
       }
 
       &.subtitle {
@@ -173,8 +177,6 @@
   }
 
   main {
-    padding: 4vw;
-
     h1,
     h2,
     h3 {

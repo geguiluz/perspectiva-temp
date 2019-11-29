@@ -24,10 +24,7 @@
     background-size: cover; } }
 
 .menu-btn {
-  position: absolute;
   z-index: 3;
-  right: 35px;
-  top: 35px;
   cursor: pointer;
   transition: all 0.5s ease-out; }
   .menu-btn .btn-line {
@@ -46,9 +43,6 @@
       transform: rotate(-45deg) translate(7px, -6px); }
 
 .logo-box {
-  display: inline-flex;
-  margin-top: 25px;
-  margin-left: 34px;
   height: 8vh;
   width: 24vw;
   max-width: 280px;
@@ -172,6 +166,7 @@ h3 {
     display: flex;
     font-size: 1rem;
     padding: 0.2rem 1rem;
+    margin-top: 3vh;
     background: rgba(39, 39, 39, 0.5); }
   h1.md-heading,
   h2.md-heading,
@@ -189,6 +184,11 @@ a {
   text-decoration: none; }
 
 header {
+  display: inline-flex;
+  margin-top: 15px;
+  padding: 0 30px 0 30px;
+  justify-content: space-between;
+  align-items: center;
   z-index: 2;
   width: 100%; }
 
@@ -199,6 +199,7 @@ header {
   font-weight: bold; }
 
 main {
+  margin: 0 30px 0 30px;
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
@@ -238,6 +239,10 @@ main {
     overflow: hidden; }
   main#projects {
     overflow-x: hidden; }
+  main#contact {
+    display: block;
+    align-items: flex-start;
+    text-align: center; }
 
 .mob-social-icons {
   display: flex;
@@ -334,6 +339,9 @@ main {
       background: #a3142f;
       color: #fbf0fa; }
 
+.contact-box {
+  margin-top: 10vh; }
+
 @media screen and (min-width: 1171px) {
   main h1.cta-text,
   main h2.cta-text,
@@ -348,13 +356,13 @@ main {
   main h3.sm-heading {
     font-size: 1rem; }
   .projects {
-    grid-template-columns: repeat(4, 1fr); }
+    grid-template-columns: repeat(3, 1fr); }
   .title-box {
     margin-bottom: 1rem; }
   #main-footer h3 {
     font-size: 1.5rem; } }
 
-@media screen and (min-width: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 869px) and (max-width: 1170px) {
   main {
     align-items: center;
     text-align: center; }
@@ -379,18 +387,20 @@ main {
   .boxes div {
     max-width: 30vw; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
+  .main-grid {
+    grid-template-rows: auto 1fr 0px; }
   main .lg-heading {
     line-height: 1;
     margin-bottom: 1rem; }
   main h1.lg-heading,
   main h2.lg-heading,
   main h3.lg-heading {
-    font-size: 12vw; }
+    font-size: 8vw; }
   main h1.md-heading,
   main h2.md-heading,
   main h3.md-heading {
-    font-size: 8vw; }
+    font-size: 7vw; }
   main h1.subtitle,
   main h2.subtitle,
   main h3.subtitle {
@@ -435,28 +445,26 @@ main {
     overflow-y: hidden; }
   .main-grid {
     grid-template-rows: auto 1fr 0px; }
-  main {
-    padding: 4vw; }
-    main h1.lg-heading,
-    main h2.lg-heading,
-    main h3.lg-heading {
-      font-size: 18vw; }
-    main h1.cta-text,
-    main h2.cta-text,
-    main h3.cta-text {
-      font-size: 4.5vw; }
-    main h1.md-heading,
-    main h2.md-heading,
-    main h3.md-heading {
-      font-size: 8vw; }
-    main h1.subtitle,
-    main h2.subtitle,
-    main h3.subtitle {
-      font-size: 3vw; }
-    main h1.sm-heading,
-    main h2.sm-heading,
-    main h3.sm-heading {
-      font-size: 3vw; }
+  main h1.lg-heading,
+  main h2.lg-heading,
+  main h3.lg-heading {
+    font-size: 18vw; }
+  main h1.cta-text,
+  main h2.cta-text,
+  main h3.cta-text {
+    font-size: 4.5vw; }
+  main h1.md-heading,
+  main h2.md-heading,
+  main h3.md-heading {
+    font-size: 8vw; }
+  main h1.subtitle,
+  main h2.subtitle,
+  main h3.subtitle {
+    font-size: 3vw; }
+  main h1.sm-heading,
+  main h2.sm-heading,
+  main h3.sm-heading {
+    font-size: 3vw; }
   .title-box {
     margin: 0 6vw 0 6vw;
     min-width: 70vw; }

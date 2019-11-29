@@ -1,9 +1,7 @@
 // Menu Button
 .menu-btn {
-  position: absolute;
   z-index: 3;
-  right: 35px;
-  top: 35px;
+
   cursor: pointer;
   @include easeOut;
 
@@ -36,9 +34,6 @@
 }
 
 .logo-box {
-  display: inline-flex;
-  margin-top: 25px;
-  margin-left: 34px;
   height: 8vh;
   width: 24vw;
   max-width: 280px;

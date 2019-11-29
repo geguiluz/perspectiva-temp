@@ -46,6 +46,7 @@ h3 {
     display: flex;
     font-size: 1rem;
     padding: 0.2rem 1rem;
+    margin-top: 3vh;
     background: rgba(lighten($primary-color, 2), 0.5);
   }
 
@@ -66,6 +67,11 @@ a {
 }
 
 header {
+  display: inline-flex;
+  margin-top: 15px;
+  padding: 0 30px 0 30px;
+  justify-content: space-between;
+  align-items: center;
   z-index: 2;
   width: 100%;
 }
@@ -79,6 +85,7 @@ header {
 }
 
 main {
+  margin: 0 30px 0 30px;
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
@@ -127,9 +134,11 @@ main {
   }
   &#projects {
     overflow-x: hidden;
-    // h1 {
-    //   margin-top: 20vh;
-    // }
+  }
+  &#contact {
+    display: block;
+    align-items: flex-start;
+    text-align: center;
   }
 }
 
@@ -278,6 +287,10 @@ main {
       }
     }
   }
+}
+
+.contact-box {
+  margin-top: 10vh;
 }
 
 @import 'mobile';
