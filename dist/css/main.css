@@ -54,6 +54,7 @@
 
 .menu {
   position: fixed;
+  margin-left: -30px;
   top: 0;
   width: 100%;
   opacity: 0.9;
