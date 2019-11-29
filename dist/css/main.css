@@ -45,6 +45,17 @@
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px); }
 
+.logo-box {
+  display: inline-flex;
+  margin-top: 16px;
+  margin-left: 34px;
+  height: 8vh;
+  width: 24vw;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
 .menu {
   position: fixed;
   top: 0;
@@ -135,6 +146,9 @@ body {
       z-index: -1;
       background: rgba(34, 34, 34, 0.7); }
 
+.img-preload {
+  visibility: hidden; }
+
 h1,
 h2,
 h3 {
@@ -152,7 +166,6 @@ h3 {
   h3.sm-heading {
     display: flex;
     font-size: 1rem;
-    margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(39, 39, 39, 0.5); }
 
@@ -173,7 +186,7 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 60px); }
+  height: 95vh; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -336,7 +349,7 @@ main {
   main h1.lg-heading,
   main h2.lg-heading,
   main h3.lg-heading {
-    font-size: 8vw; }
+    font-size: 12vw; }
   main h1.sm-heading,
   main h2.sm-heading,
   main h3.sm-heading {
@@ -373,13 +386,14 @@ main {
 
 @media screen and (max-width: 500px) {
   body {
-    background-position: center; }
+    background-position: center;
+    overflow-y: hidden; }
   main {
     padding: 4vw; }
     main h1.lg-heading,
     main h2.lg-heading,
     main h3.lg-heading {
-      font-size: 15vw; }
+      font-size: 18vw; }
     main h1.md-heading,
     main h2.md-heading,
     main h3.md-heading {

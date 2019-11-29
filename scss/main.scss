@@ -16,6 +16,10 @@ body {
   line-height: 1.5;
 }
 
+.img-preload {
+  visibility: hidden;
+}
+
 // Headings
 h1,
 h2,
@@ -32,7 +36,6 @@ h3 {
   &.sm-heading {
     display: flex;
     font-size: 1rem;
-    margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
   }
@@ -59,9 +62,9 @@ header {
 
 main {
   padding: 4rem;
+  height: 95vh; //comment out if you want a sticky footer
   // This will make the sticky footer
-  // height: 100%; //no longer 100%
-  min-height: calc(100vh - 60px);
+  // min-height: calc(100vh - 60px);
   .icons {
     margin-top: 1rem;
     a {
@@ -73,6 +76,7 @@ main {
       }
     }
   }
+
   &#home {
     overflow: hidden;
     h1 {

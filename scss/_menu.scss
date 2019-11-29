@@ -35,6 +35,18 @@
   }
 }
 
+.logo-box {
+  display: inline-flex;
+  margin-top: 16px;
+  margin-left: 34px;
+  height: 8vh;
+  width: 24vw;
+  background-image: url('../img/logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 // Menu Overlay
 .menu {
   position: fixed;
