@@ -37,10 +37,12 @@
 
 .logo-box {
   display: inline-flex;
-  margin-top: 16px;
+  margin-top: 25px;
   margin-left: 34px;
   height: 8vh;
   width: 24vw;
+  max-width: 280px;
+  min-width: 160px;
   background-image: url('../img/logo.png');
   background-repeat: no-repeat;
   background-size: contain;
