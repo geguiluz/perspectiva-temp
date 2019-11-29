@@ -79,7 +79,7 @@
     h2,
     h3 {
       &.lg-heading {
-        font-size: 8vw;
+        font-size: 12vw;
       }
 
       &.sm-heading {
@@ -148,6 +148,7 @@
 @include mediaSm {
   body {
     background-position: center;
+    overflow-y: hidden;
   }
   main {
     padding: 4vw;
@@ -156,7 +157,7 @@
     h2,
     h3 {
       &.lg-heading {
-        font-size: 15vw;
+        font-size: 18vw;
       }
 
       &.md-heading {
@@ -167,9 +168,6 @@
         font-size: 3vw;
       }
     }
-  }
-  main#home h1 {
-    margin-top: 20vh;
   }
 
   .title-box {
