@@ -24,10 +24,7 @@
     background-size: cover; } }
 
 .menu-btn {
-  position: absolute;
   z-index: 3;
-  right: 35px;
-  top: 35px;
   cursor: pointer;
   transition: all 0.5s ease-out; }
   .menu-btn .btn-line {
@@ -46,9 +43,6 @@
       transform: rotate(-45deg) translate(7px, -6px); }
 
 .logo-box {
-  display: inline-flex;
-  margin-top: 25px;
-  margin-left: 34px;
   height: 8vh;
   width: 24vw;
   max-width: 280px;
@@ -166,19 +160,35 @@ h3 {
   h3.lg-heading {
     display: flex;
     font-size: 5rem; }
+  h1.subtitle,
+  h2.subtitle,
+  h3.subtitle {
+    display: flex;
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+    margin-top: 3vh;
+    background: rgba(39, 39, 39, 0.5); }
+  h1.md-heading,
+  h2.md-heading,
+  h3.md-heading {
+    font-size: 3rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
     display: flex;
-    font-size: 1rem;
-    padding: 0.2rem 1rem;
-    background: rgba(39, 39, 39, 0.5); }
+    margin: 1vh 0 2vh 0;
+    font-size: 1rem; }
 
 a {
   color: #fbf0fa;
   text-decoration: none; }
 
 header {
+  display: inline-flex;
+  margin-top: 15px;
+  padding: 0 30px 0 30px;
+  justify-content: space-between;
+  align-items: center;
   z-index: 2;
   width: 100%; }
 
@@ -189,7 +199,7 @@ header {
   font-weight: bold; }
 
 main {
-  padding: 4rem;
+  margin: 0 30px 0 30px;
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
@@ -207,17 +217,32 @@ main {
     max-width: 45rem;
     align-items: center;
     justify-content: center; }
+  main .page-title {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 0;
+    max-width: 800px;
+    line-height: 0.9;
+    padding: 0 0.5rem 0 0.5rem;
+    justify-content: center; }
+  main .title-box {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 0;
+    line-height: 0.9;
+    padding: 0 0.5rem 0 0.5rem;
+    justify-content: center;
+    max-width: 25rem;
+    border-left: #fbf0fa 3px solid;
+    border-right: #fbf0fa 3px solid; }
   main#home {
     overflow: hidden; }
-    main#home .title-box {
-      display: inline-flex;
-      flex-wrap: wrap;
-      line-height: 0.9;
-      max-width: 25rem;
-      padding: 0 0.5rem 0 0.5rem;
-      justify-content: center;
-      border-left: #fbf0fa 3px solid;
-      border-right: #fbf0fa 3px solid; }
+  main#projects {
+    overflow-x: hidden; }
+  main#contact {
+    display: block;
+    align-items: flex-start;
+    text-align: center; }
 
 .mob-social-icons {
   display: flex;
@@ -280,7 +305,7 @@ main {
   color: #fbf0fa; }
 
 .btn-light {
-  background: #a2a2a2;
+  background: white;
   color: #333; }
 
 #main-footer {
@@ -314,23 +339,30 @@ main {
       background: #a3142f;
       color: #fbf0fa; }
 
+.contact-box {
+  margin-top: 10vh; }
+
 @media screen and (min-width: 1171px) {
-  main h1.md-heading,
-  main h2.md-heading,
-  main h3.md-heading {
+  main h1.cta-text,
+  main h2.cta-text,
+  main h3.cta-text {
     font-size: 1.5rem; }
+  main h1.subtitle,
+  main h2.subtitle,
+  main h3.subtitle {
+    font-size: 1.7rem; }
   main h1.sm-heading,
   main h2.sm-heading,
   main h3.sm-heading {
-    font-size: 1.7rem; }
+    font-size: 1rem; }
   .projects {
-    grid-template-columns: repeat(4, 1fr); }
+    grid-template-columns: repeat(3, 1fr); }
   .title-box {
     margin-bottom: 1rem; }
   #main-footer h3 {
     font-size: 1.5rem; } }
 
-@media screen and (min-width: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 869px) and (max-width: 1170px) {
   main {
     align-items: center;
     text-align: center; }
@@ -341,24 +373,38 @@ main {
     main h2.lg-heading,
     main h3.lg-heading {
       font-size: 8vw; }
+    main h1.subtitle,
+    main h2.subtitle,
+    main h3.subtitle {
+      font-size: 1.7rem; }
     main h1.sm-heading,
     main h2.sm-heading,
     main h3.sm-heading {
-      font-size: 1.5vw; }
+      font-size: 1rem; }
   .title-box {
     margin: 0 6vw 0 6vw;
     max-width: 30vw; }
   .boxes div {
     max-width: 30vw; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
+  .main-grid {
+    grid-template-rows: auto 1fr 0px; }
   main .lg-heading {
     line-height: 1;
     margin-bottom: 1rem; }
   main h1.lg-heading,
   main h2.lg-heading,
   main h3.lg-heading {
-    font-size: 12vw; }
+    font-size: 8vw; }
+  main h1.md-heading,
+  main h2.md-heading,
+  main h3.md-heading {
+    font-size: 7vw; }
+  main h1.subtitle,
+  main h2.subtitle,
+  main h3.subtitle {
+    font-size: 2vw; }
   main h1.sm-heading,
   main h2.sm-heading,
   main h3.sm-heading {
@@ -397,20 +443,28 @@ main {
   body {
     background-position: center;
     overflow-y: hidden; }
-  main {
-    padding: 4vw; }
-    main h1.lg-heading,
-    main h2.lg-heading,
-    main h3.lg-heading {
-      font-size: 18vw; }
-    main h1.md-heading,
-    main h2.md-heading,
-    main h3.md-heading {
-      font-size: 5vw; }
-    main h1.sm-heading,
-    main h2.sm-heading,
-    main h3.sm-heading {
-      font-size: 3vw; }
+  .main-grid {
+    grid-template-rows: auto 1fr 0px; }
+  main h1.lg-heading,
+  main h2.lg-heading,
+  main h3.lg-heading {
+    font-size: 18vw; }
+  main h1.cta-text,
+  main h2.cta-text,
+  main h3.cta-text {
+    font-size: 4.5vw; }
+  main h1.md-heading,
+  main h2.md-heading,
+  main h3.md-heading {
+    font-size: 8vw; }
+  main h1.subtitle,
+  main h2.subtitle,
+  main h3.subtitle {
+    font-size: 3vw; }
+  main h1.sm-heading,
+  main h2.sm-heading,
+  main h3.sm-heading {
+    font-size: 3vw; }
   .title-box {
     margin: 0 6vw 0 6vw;
     min-width: 70vw; }
