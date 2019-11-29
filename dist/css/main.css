@@ -209,9 +209,10 @@ main {
     margin-top: 1rem; }
     main .icons a {
       padding: 0.4rem; }
-      main .icons a:hover {
-        color: #a3142f;
-        transition: all 0.5s ease-out; }
+      @media not all and (pointer: coarse) {
+        main .icons a:hover {
+          color: #a3142f;
+          transition: all 0.5s ease-out; } }
   main .box-container {
     display: inline-block;
     flex-wrap: wrap;
@@ -239,6 +240,8 @@ main {
     border-right: #fbf0fa 3px solid; }
   main#home {
     overflow: hidden; }
+  main#projects {
+    overflow-x: hidden; }
   main#contact {
     display: block;
     align-items: flex-start; }
@@ -285,19 +288,21 @@ main {
     padding: 0.5rem 1.5rem;
     background: rgba(39, 39, 39, 0.5);
     transition: all 0.5s ease-out; }
-    .boxes div:hover {
-      padding: 1rem 2rem;
-      background: rgba(39, 39, 39, 0);
-      border: 3px #a3142f solid; }
+    @media not all and (pointer: coarse) {
+      .boxes div:hover {
+        padding: 1rem 2rem;
+        background: rgba(39, 39, 39, 0);
+        border: 3px #a3142f solid; } }
 
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #a3142f;
-    color: #fbf0fa; }
+  @media not all and (pointer: coarse) {
+    .btn:hover, .btn-dark:hover, .btn-light:hover {
+      background: #a3142f;
+      color: #fbf0fa; } }
 
 .btn-dark {
   background: black;
@@ -319,9 +324,10 @@ main {
     font-size: 1rem; }
   #main-footer .icons a {
     padding: 0.4rem; }
-    #main-footer .icons a:hover {
-      color: #a3142f;
-      transition: all 0.5s ease-out; }
+    @media not all and (pointer: coarse) {
+      #main-footer .icons a:hover {
+        color: #a3142f;
+        transition: all 0.5s ease-out; } }
 
 .projects {
   display: grid;
@@ -330,13 +336,14 @@ main {
   .projects img {
     width: 100%;
     border: 3px #fbf0fa solid; }
-  .projects .item:hover {
-    opacity: 0.5;
-    border-color: #a3142f;
-    transition: all 0.5s ease-out; }
-    .projects .item:hover .btn, .projects .item:hover .btn-dark, .projects .item:hover .btn-light {
-      background: #a3142f;
-      color: #fbf0fa; }
+  @media not all and (pointer: coarse) {
+    .projects .item:hover {
+      opacity: 0.5;
+      border-color: #a3142f;
+      transition: all 0.5s ease-out; }
+      .projects .item:hover .btn, .projects .item:hover .btn-dark, .projects .item:hover .btn-light {
+        background: #a3142f;
+        color: #fbf0fa; } }
 
 .contact-box {
   margin-top: 10vh;
