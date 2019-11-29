@@ -1,26 +1,26 @@
 @keyframes banner {
   0% {
-    background-image: url(../img/1-SAYAVEDRA.jpg);
+    background-image: url(../img/1440X900/WEB_PERSP_1.jpg);
     background-size: cover; }
   25% {
-    background-image: url(../img/1-SAYAVEDRA.jpg); }
+    background-image: url(../img/1440X900/WEB_PERSP_1.jpg); }
   26% {
-    background-image: url(../img/2-AMD.jpg);
+    background-image: url(../img/1440X900/WEB_PERSP_2.jpg);
     background-size: cover; }
   50% {
-    background-image: url(../img/2-AMD.jpg);
+    background-image: url(../img/1440X900/WEB_PERSP_2.jpg);
     background-size: cover; }
   51% {
-    background-image: url(../img/3-G_Aznar_Casa.jpg);
+    background-image: url(../img/1440X900/WEB_PERSP_3.jpg);
     background-size: cover; }
   75% {
-    background-image: url(../img/3-G_Aznar_Casa.jpg);
+    background-image: url(../img/1440X900/WEB_PERSP_3.jpg);
     background-size: cover; }
   76% {
-    background-image: url(../img/4-Softkina.jpg);
+    background-image: url(../img/1440X900/WEB_PERSP_4.jpg);
     background-size: cover; }
   100% {
-    background-image: url(../img/4-Softkina.jpg);
+    background-image: url(../img/1440X900/WEB_PERSP_4.jpg);
     background-size: cover; } }
 
 .menu-btn {
