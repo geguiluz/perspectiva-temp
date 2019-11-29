@@ -4,11 +4,16 @@
     h1,
     h2,
     h3 {
-      &.md-heading {
+      &.cta-text {
         font-size: 1.5rem;
       }
-      &.sm-heading {
+
+      &.subtitle {
         font-size: 1.7rem;
+      }
+
+      &.sm-heading {
+        font-size: 1rem;
       }
     }
   }
@@ -46,8 +51,12 @@
         font-size: 8vw;
       }
 
+      &.subtitle {
+        font-size: 1.7rem;
+      }
+
       &.sm-heading {
-        font-size: 1.5vw;
+        font-size: 1rem;
       }
     }
   }
@@ -80,6 +89,14 @@
     h3 {
       &.lg-heading {
         font-size: 12vw;
+      }
+
+      &.md-heading {
+        font-size: 8vw;
+      }
+
+      &.subtitle {
+        font-size: 2vw;
       }
 
       &.sm-heading {
@@ -150,6 +167,11 @@
     background-position: center;
     overflow-y: hidden;
   }
+
+  .main-grid {
+    grid-template-rows: auto 1fr 0px;
+  }
+
   main {
     padding: 4vw;
 
@@ -160,8 +182,16 @@
         font-size: 18vw;
       }
 
+      &.cta-text {
+        font-size: 4.5vw;
+      }
+
       &.md-heading {
-        font-size: 5vw;
+        font-size: 8vw;
+      }
+
+      &.subtitle {
+        font-size: 3vw;
       }
 
       &.sm-heading {

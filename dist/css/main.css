@@ -166,13 +166,23 @@ h3 {
   h3.lg-heading {
     display: flex;
     font-size: 5rem; }
-  h1.sm-heading,
-  h2.sm-heading,
-  h3.sm-heading {
+  h1.subtitle,
+  h2.subtitle,
+  h3.subtitle {
     display: flex;
     font-size: 1rem;
     padding: 0.2rem 1rem;
     background: rgba(39, 39, 39, 0.5); }
+  h1.md-heading,
+  h2.md-heading,
+  h3.md-heading {
+    font-size: 3rem; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    display: flex;
+    margin: 1vh 0 2vh 0;
+    font-size: 1rem; }
 
 a {
   color: #fbf0fa;
@@ -189,7 +199,6 @@ header {
   font-weight: bold; }
 
 main {
-  padding: 4rem;
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
@@ -207,17 +216,28 @@ main {
     max-width: 45rem;
     align-items: center;
     justify-content: center; }
+  main .page-title {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 0;
+    max-width: 800px;
+    line-height: 0.9;
+    padding: 0 0.5rem 0 0.5rem;
+    justify-content: center; }
+  main .title-box {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 0;
+    line-height: 0.9;
+    padding: 0 0.5rem 0 0.5rem;
+    justify-content: center;
+    max-width: 25rem;
+    border-left: #fbf0fa 3px solid;
+    border-right: #fbf0fa 3px solid; }
   main#home {
     overflow: hidden; }
-    main#home .title-box {
-      display: inline-flex;
-      flex-wrap: wrap;
-      line-height: 0.9;
-      max-width: 25rem;
-      padding: 0 0.5rem 0 0.5rem;
-      justify-content: center;
-      border-left: #fbf0fa 3px solid;
-      border-right: #fbf0fa 3px solid; }
+  main#projects {
+    overflow-x: hidden; }
 
 .mob-social-icons {
   display: flex;
@@ -280,7 +300,7 @@ main {
   color: #fbf0fa; }
 
 .btn-light {
-  background: #a2a2a2;
+  background: white;
   color: #333; }
 
 #main-footer {
@@ -315,14 +335,18 @@ main {
       color: #fbf0fa; }
 
 @media screen and (min-width: 1171px) {
-  main h1.md-heading,
-  main h2.md-heading,
-  main h3.md-heading {
+  main h1.cta-text,
+  main h2.cta-text,
+  main h3.cta-text {
     font-size: 1.5rem; }
+  main h1.subtitle,
+  main h2.subtitle,
+  main h3.subtitle {
+    font-size: 1.7rem; }
   main h1.sm-heading,
   main h2.sm-heading,
   main h3.sm-heading {
-    font-size: 1.7rem; }
+    font-size: 1rem; }
   .projects {
     grid-template-columns: repeat(4, 1fr); }
   .title-box {
@@ -341,10 +365,14 @@ main {
     main h2.lg-heading,
     main h3.lg-heading {
       font-size: 8vw; }
+    main h1.subtitle,
+    main h2.subtitle,
+    main h3.subtitle {
+      font-size: 1.7rem; }
     main h1.sm-heading,
     main h2.sm-heading,
     main h3.sm-heading {
-      font-size: 1.5vw; }
+      font-size: 1rem; }
   .title-box {
     margin: 0 6vw 0 6vw;
     max-width: 30vw; }
@@ -359,6 +387,14 @@ main {
   main h2.lg-heading,
   main h3.lg-heading {
     font-size: 12vw; }
+  main h1.md-heading,
+  main h2.md-heading,
+  main h3.md-heading {
+    font-size: 8vw; }
+  main h1.subtitle,
+  main h2.subtitle,
+  main h3.subtitle {
+    font-size: 2vw; }
   main h1.sm-heading,
   main h2.sm-heading,
   main h3.sm-heading {
@@ -397,16 +433,26 @@ main {
   body {
     background-position: center;
     overflow-y: hidden; }
+  .main-grid {
+    grid-template-rows: auto 1fr 0px; }
   main {
     padding: 4vw; }
     main h1.lg-heading,
     main h2.lg-heading,
     main h3.lg-heading {
       font-size: 18vw; }
+    main h1.cta-text,
+    main h2.cta-text,
+    main h3.cta-text {
+      font-size: 4.5vw; }
     main h1.md-heading,
     main h2.md-heading,
     main h3.md-heading {
-      font-size: 5vw; }
+      font-size: 8vw; }
+    main h1.subtitle,
+    main h2.subtitle,
+    main h3.subtitle {
+      font-size: 3vw; }
     main h1.sm-heading,
     main h2.sm-heading,
     main h3.sm-heading {
