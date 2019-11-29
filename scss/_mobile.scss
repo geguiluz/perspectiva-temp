@@ -4,17 +4,22 @@
     h1,
     h2,
     h3 {
-      &.md-heading {
+      &.cta-text {
         font-size: 1.5rem;
       }
-      &.sm-heading {
+
+      &.subtitle {
         font-size: 1.7rem;
+      }
+
+      &.sm-heading {
+        font-size: 1rem;
       }
     }
   }
 
   .projects {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .title-box {
@@ -46,8 +51,12 @@
         font-size: 8vw;
       }
 
+      &.subtitle {
+        font-size: 1.7rem;
+      }
+
       &.sm-heading {
-        font-size: 1.5vw;
+        font-size: 1rem;
       }
     }
   }
@@ -66,6 +75,10 @@
 
 // Tablets and small Laptops
 @include mediaMd {
+  .main-grid {
+    grid-template-rows: auto 1fr 0px;
+  }
+
   main {
     // align-items: center;
     // text-align: center;
@@ -79,7 +92,15 @@
     h2,
     h3 {
       &.lg-heading {
-        font-size: 12vw;
+        font-size: 8vw;
+      }
+
+      &.md-heading {
+        font-size: 7vw;
+      }
+
+      &.subtitle {
+        font-size: 2vw;
       }
 
       &.sm-heading {
@@ -150,9 +171,12 @@
     background-position: center;
     overflow-y: hidden;
   }
-  main {
-    padding: 4vw;
 
+  .main-grid {
+    grid-template-rows: auto 1fr 0px;
+  }
+
+  main {
     h1,
     h2,
     h3 {
@@ -160,8 +184,16 @@
         font-size: 18vw;
       }
 
+      &.cta-text {
+        font-size: 4.5vw;
+      }
+
       &.md-heading {
-        font-size: 5vw;
+        font-size: 8vw;
+      }
+
+      &.subtitle {
+        font-size: 3vw;
       }
 
       &.sm-heading {

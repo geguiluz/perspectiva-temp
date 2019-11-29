@@ -3,13 +3,13 @@ $secondary-color: #a3142f;
 $contrast-color: #fbf0fa;
 $dark-color: #222;
 $show-home-image: true;
-$home-image1: url(../img/1-SAYAVEDRA.jpg);
-$home-image2: url(../img/2-AMD.jpg);
-$home-image3: url(../img/3-G_Aznar_Casa.jpg);
-$home-image4: url(../img/4-Softkina.jpg);
-$home-image5: url(../img/5-Samano.jpg);
-$home-image6: url(../img/6-Amanali.jpg);
-$home-image7: url(../img/7-amanali.jpg);
+$home-image1: url(../img/1440X900/WEB_PERSP_1.jpg);
+$home-image2: url(../img/1440X900/WEB_PERSP_2.jpg);
+$home-image3: url(../img/1440X900/WEB_PERSP_3.jpg);
+$home-image4: url(../img/1440X900/WEB_PERSP_4.jpg);
+$home-image5: url(../img/1440X900/WEB_PERSP_5.jpg);
+$home-image6: url(../img/1440X900/WEB_PERSP_6.jpg);
+$home-image7: url(../img/1440X900/WEB_PERSP_7.jpg);
 
 $background-opacity: 0.7;
 
@@ -58,13 +58,13 @@ $background-opacity: 0.7;
 }
 
 @mixin mediaMd {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 868px) {
     @content;
   }
 }
 
 @mixin mediaLg {
-  @media screen and (min-width: 769px) and (max-width: 1170px) {
+  @media screen and (min-width: 869px) and (max-width: 1170px) {
     @content;
   }
 }
