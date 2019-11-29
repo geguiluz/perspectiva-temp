@@ -238,8 +238,6 @@ main {
     border-right: #fbf0fa 3px solid; }
   main#home {
     overflow: hidden; }
-  main#projects {
-    overflow-x: hidden; }
   main#contact {
     display: block;
     align-items: flex-start;
