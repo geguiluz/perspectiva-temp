@@ -16,6 +16,19 @@ body {
   line-height: 1.5;
 }
 
+.main-grid {
+  display: grid;
+
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+
+  grid-template-rows: auto 1fr auto;
+
+  height: 100vh;
+}
+
 // Headings
 h1,
 h2,
@@ -32,7 +45,6 @@ h3 {
   &.sm-heading {
     display: flex;
     font-size: 1rem;
-    margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
   }
@@ -44,7 +56,7 @@ a {
 }
 
 header {
-  position: fixed;
+  // position: fixed;
   z-index: 2;
   width: 100%;
 }
@@ -59,9 +71,13 @@ header {
 
 main {
   padding: 4rem;
+  // height: 95vh; //comment out if you want a sticky footer
   // This will make the sticky footer
-  // height: 100%; //no longer 100%
-  min-height: calc(100vh - 60px);
+  // min-height: calc(100vh - 60px);
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   .icons {
     margin-top: 1rem;
     a {
@@ -73,11 +89,20 @@ main {
       }
     }
   }
+
+  .box-container {
+    display: inline-block;
+    flex-wrap: wrap;
+    max-width: 45rem;
+    align-items: center;
+    justify-content: center;
+  }
+
   &#home {
     overflow: hidden;
-    h1 {
-      margin-top: 30vh;
-    }
+    // h1 {
+    //   margin-top: 20vh;
+    // }
     .title-box {
       display: inline-flex;
       flex-wrap: wrap;
@@ -143,7 +168,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 11vh;
+  // margin-top: 11vh;
 
   div {
     display: flex;
@@ -196,7 +221,6 @@ main {
   padding: 1rem;
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
-  height: 60px;
 
   h3 {
     margin: 0 0.8rem 0 0;
