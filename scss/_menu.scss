@@ -47,6 +47,7 @@
 // Menu Overlay
 .menu {
   position: fixed;
+  // TODO: Older browsers need margin-left: -98vw
   margin-left: -30px;
   top: 0;
   width: 100%;
