@@ -20,9 +20,9 @@ body {
   display: grid;
 
   grid-template-areas:
-    'header'
-    'main'
-    'footer';
+    'nav'
+    'content'
+    'footer-area';
 
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
@@ -75,6 +75,7 @@ header {
   align-items: center;
   z-index: 2;
   width: 100%;
+  grid-area: nav;
 }
 
 .text-secondary {
@@ -91,6 +92,7 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  grid-area: content;
   .icons {
     margin-top: 1rem;
     a {
@@ -242,6 +244,10 @@ main {
   @extend .btn;
   background: lighten($primary-color, 100);
   color: #333;
+}
+
+footer {
+  grid-area: footer-area;
 }
 
 #main-footer {
