@@ -147,6 +147,7 @@ body {
   display: grid;
   grid-template-areas: 'header' 'main' 'footer';
   grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
   height: 100vh; }
 
 h1,
@@ -255,7 +256,7 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(3, auto); }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
@@ -332,7 +333,7 @@ main {
 .projects {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(3, auto); }
   .projects img {
     width: 100%;
     border: 3px #fbf0fa solid; }
@@ -363,7 +364,7 @@ main {
   main h3.sm-heading {
     font-size: 1rem; }
   .projects {
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(3, auto); }
   .title-box {
     margin-bottom: 1rem; }
   #main-footer h3 {
@@ -396,7 +397,8 @@ main {
 
 @media screen and (max-width: 868px) {
   .main-grid {
-    grid-template-rows: auto 1fr 0px; }
+    grid-template-rows: auto 1fr 0px;
+    grid-template-columns: 1fr; }
   main .lg-heading {
     line-height: 1;
     margin-bottom: 1rem; }
@@ -442,7 +444,7 @@ main {
   .boxes div {
     min-width: 50vw; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, auto); }
   #main-footer {
     visibility: hidden; } }
 
@@ -451,7 +453,8 @@ main {
     background-position: center;
     overflow-y: hidden; }
   .main-grid {
-    grid-template-rows: auto 1fr 0px; }
+    grid-template-rows: auto 1fr 0px;
+    grid-template-columns: 1fr; }
   main h1.lg-heading,
   main h2.lg-heading,
   main h3.lg-heading {

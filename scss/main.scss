@@ -25,6 +25,7 @@ body {
     'footer';
 
   grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
 
   height: 100vh;
 }
@@ -157,7 +158,7 @@ main {
   grid-template-areas:
     'bioimage bio bio'
     'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
 
   // These are my grid areas
 
@@ -272,7 +273,7 @@ main {
 .projects {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
 
   img {
     width: 100%;
