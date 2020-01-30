@@ -20,11 +20,12 @@ body {
   display: grid;
 
   grid-template-areas:
-    'header'
-    'main'
-    'footer';
+    'nav'
+    'content'
+    'footer-area';
 
   grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
 
   height: 100vh;
 }
@@ -74,6 +75,7 @@ header {
   align-items: center;
   z-index: 2;
   width: 100%;
+  grid-area: nav;
 }
 
 .text-secondary {
@@ -90,6 +92,7 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  grid-area: content;
   .icons {
     margin-top: 1rem;
     a {
@@ -157,7 +160,7 @@ main {
   grid-template-areas:
     'bioimage bio bio'
     'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
 
   // These are my grid areas
 
@@ -243,6 +246,10 @@ main {
   color: #333;
 }
 
+footer {
+  grid-area: footer-area;
+}
+
 #main-footer {
   display: flex;
   justify-content: flex-end;
@@ -272,7 +279,7 @@ main {
 .projects {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
 
   img {
     width: 100%;
